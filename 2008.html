@@ -1,0 +1,448 @@
+<<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color:blanchedalmond;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1 style="color:blue;">MAGAZIN PIESE AUTO</h1>
+<hr>
+
+<h2>Cauta dupa piesa</h2>
+
+<div id="myBtnContainer">
+  <button class="btn" onclick="filterSelection('Filtre')">Filtre</button>
+  <button class="btn" onclick="filterSelection('Motor')"> Motor</button>
+  <button class="btn" onclick="filterSelection('Sistem de frinare')">Sistm de frinare</button>
+  <button class="btn" onclick="filterSelection('Suspensii')">Suspensii</button>
+  <button class="btn" onclick="filterSelection('Directie roti')">Directie roti</button>
+  <button class="btn" onclick="filterSelection('Sistem de racire')">Sistem de racire</button>
+  <button class="btn" onclick="filterSelection('Caroserie')">Caroserie</button>
+  <button class="btn" onclick="filterSelection('Accesorii auto')">Accesorii auto</button>
+  <button class="btn" onclick="filterSelection('Electrice')">Electrice</button>
+ 
+</div>
+
+<!-- Portfolio Gallery piese -->
+<div class="row">
+  <div class="column Filtre">
+    <div class="content">
+      <a href="opel.jpg"> <img src="opel.jpg" alt="" style="width:30%">
+      <h4>Filtru aer</h4><a/>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Filtre">
+    <div class="content">
+    <img src="/w3images/lights.jpg" alt="" style="width:100%">
+      <h4>Filtru ulei</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column nFiltre">
+    <div class="content">
+    <img src="/w3images/nature.jpg" alt="" style="width:100%">
+      <h4>Filtru hidraulic</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column Filtre">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="" style="width:100%">
+      <h4>Filtru polen</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Filtre">
+    <div class="content">
+    <img src="/w3images/cars2.jpg" alt="" style="width:100%">
+      <h4>Filtru combustibil</h4>
+      <p></p>
+    </div>
+  </div>
+  <!-- END FILTRE -->
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/cars3.jpg" alt="" style="width:100%">
+      <h4>Suport motor</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column Motor">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="" style="width:100%">
+      <h4>Control gaze evacuare</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Control distributie</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Garnituri</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/cars2.jpg" alt="" style="width:100%">
+      <h4>Admisie aer motor</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/cars3.jpg" alt="" style="width:100%">
+      <h4>Chiuloasa piese</h4>
+      <p></p>
+    </div>
+  </div>
+
+  <div class="column Motor">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="" style="width:100%">
+      <h4>Ungere</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Bloc motor</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Arbore cotit angrenare</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Motor">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Distributie</h4>
+      <p></p>
+    </div>
+  </div>
+<!-- END MOTOR -->
+<div class="column Sistem de frinare">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Frina disc</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Sistem de frinare">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Frina tambur</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Sistem de frinare">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Etrieri</h4>
+      <p></p>
+    </div>
+  </div>
+</div>
+<!-- END Sistem de frinare -->
+<div class="column Suspensii">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="" style="width:100%">
+      <h4>Butuc roata/lagar</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Suspensii">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Articulatie/set de reparare</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Suspensii">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Directie</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Suspensii">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Articulatii</h4>
+      <p></p>
+    </div>
+  </div>
+<!-- END Suspensii -->
+<div class="column Sistem de racire">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Radiator apa /ulei</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Sistem de racire">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Furtunuri</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Sistem de racire">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Termostate</h4>
+      <p></p>
+    </div>
+  </div>
+<!-- END Sistem de racire -->
+ <div class="column Directie roti">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Bielete de directie</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Directie roti">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Piese</h4>
+      <p></p>
+    </div>
+  </div>
+  <!-- END  Directie roti-->
+  <div class="column Caroserie">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Fata</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Caroserie">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Celula pasager</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Caroserie">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Spate</h4>
+      <p></p>
+    </div>
+  </div>
+<div class="column Caroserie">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Faruri</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Caroserie">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Elemente caroserie</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Caroserie">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Iluminat</h4>
+      <p></p>
+    </div>
+  </div>
+  <!-- END  Caroserie-->
+  <div class="column Accesorii auto">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Accesorii iarna</h4>
+      <p></p>
+    </div>
+  </div>
+<div class="column Accesorii auto">
+    <div class="content">
+    <img src="/w3images/people2.jpg" alt="" style="width:100%">
+      <h4>Accesorii vara</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Accesorii auto">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Accesorii interior</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Accesorii auto">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="" style="width:100%">
+      <h4>Huse/scaune auto</h4>
+      <p></p>
+    </div>
+  </div>
+   <!-- END  Accesorii auto-->
+  <div class="column Electrice">
+    <div class="content">
+    <img src="mercedes.jpg" alt="" style="width:30%">
+      <h4>Faruri</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Electrice">
+    <div class="content">
+    <img src="opel.jpg" alt="" style="width:30%">
+      <h4>Generator</h4>
+      <p></p>
+    </div>
+  </div>
+  <div class="column Electrice">
+    <div class="content">
+    <a href="Alternator.html"><img src="scoda.jpg" alt="Alternator" style="width:29%">
+      <h4>Alternator</h4><a/>
+      <p></p>
+    </div>
+  </div>
+  <!-- END  Electrice--> 
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
